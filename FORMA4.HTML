@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Garten Bau</title>
+
+    <link rel="stylesheet" href="contact.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div style="margin-left: 720px; margin-top:470px;position: absolute;" >
+        <button id="palidhje" onclick="myFunction()">Kontrollo mesazhin per W</button>
+    </div>
+    <article style="display: inline-flex;" >
+        <form action="MAILTO:FrrokMotion@gmail.com" method=”POST” enctype=”TEXT/PLAIN”  name="myform" onsubmit="return valid()" >
+            <div class="contact-form">
+                <h1>Contact</h1>
+                <div class="txtb">
+                    <label>Full Name :</label>
+                    <input type="text" name="username" id="emri" placeholder="Enter Your Name" class="form-control"  autocomplete="on"/>
+                </div>
+                <!--name=""-->
+                <!--value=""-->
+
+                <div class="txtb">
+                    <label>Email :</label>
+                    <input type="text"  name="email" id="email" placeholder="Enter Your Email" class="form-control" autocomplete="off" />
+                </div>
+
+
+                <div class="txtb">
+                    <label>Phone :</label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter Your Phone Number" class="form-control" />
+                    <div id="error" style="position: absolute; width: 200px; height: 200px; border:5px solid red;"> O ANDIIII</div>
+                    
+                </div>
+
+                <div class="txtb">
+                    <label >Mesage :</label>
+                    <textarea  name="message" id="message" ></textarea>
+
+                   
+
+<p id="demo"></p>
+                    
+                </div>
+                <legend>Vlerësoni nga 1-10:</legend>
+            <label>Sa jeni të kënaqur me shërbimet tona:  </label>&nbsp;
+            1<input type="range" min="1" max="10" step="1" value="3" onchange="myOutput.value = this.value" />10
+            <br />
+            <label>Vlerësimi juaj për ne: </label>
+            <output name="myOutput">3</output>
+        
+    <div id="myProgress">
+        <div id="myBar"> <h3 style="margin: 0; padding-top: 0;">LOADING...</h3></div>
+    </div>
+                <button type="button" id="submit" class="btn btn-primary" onclick="komfirmimi();move()"  value="SUBMIT">Submit</button>
+                <!--<a id="submit" class="btn">Send</a>-->
+            </div>
+            </form>
+            
+    </article>
+
+    <script>
+        $("#submit").click(function(){
+            var name = $("#name").val();
+            var email = $("#email").val();
+            var phone = $("#phone").val();
+
+            if (name == '' || email == '' || phone == '') {
+                alert("Plotso te gjitha fushat!");
+            }
+            
+        });
+
+        function move() {
+            var elem = document.getElementById("myBar");
+            var width = 0;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (width == 100) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                }
+            }
+        }
+        function komfirmimi() {
+  var txt;
+  if (confirm("Komfirmo!")) {
+    txt = "U komfirmua.Faleminderit!";
+  } else {
+    txt = "U anulua!";
+  }
+  window.alert(txt);
+}
+const inputs = document.querySelectorAll('input');  
+const patterns = {
+    username: /^[a-z\d]{5,12}$/i,
+    email:/^([a-z\d\.-_]+)@([a-z\d-]+)\.([a-z]{2,10})(\.[a-z]{2,10})?$/,
+    message: /^[a-z\d\w\.\,\-\_\"]{5,200}$/i,
+    phone:/^[\d\+]{12}$/
+
+};
+
+function validate(field,regex){
+    if(regex.test(field.value)){
+        field.className='valid';
+
+    }else{
+        field.className='invalid';
+    }
+}
+
+inputs.forEach((input)=>{
+input.addEventListener('keyup',(e) =>{
+    //console.log(e.target.attributes.name.value);
+    validate(e.target,patterns[e.target.attributes.name.value])
+});
+});
+
+
+
+
+    function myFunction() {
+  var str = message.value;
+  var patt = new RegExp("w");
+  var res = patt.exec(str);
+  if(res=="w"){
+  document.getElementById("demo").innerHTML = "Keni perdorur W ";
+  }
+  else{
+  document.getElementById("demo").innerHTML =" ";
+  }
+}
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
