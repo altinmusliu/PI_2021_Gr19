@@ -11,7 +11,7 @@ $conn = new mysqli("localhost","root","","FrrokMotion");
         echo "<H1>Welcome   <span style=\"color:red;\">".$username."</H1>";
     }
     else{
-         "<script>confirm(\"KENI GABUAR USERNAME OSE PASSOWRDIN\")</script>"
+         "<script>confirm(\"KENI GABUAR USERNAME OSE PASSOWRDIN\")</script>";
         ///altini
     }
 

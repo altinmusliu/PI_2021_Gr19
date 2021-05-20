@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
 
         $query = "insert into register(emri,password_,email) values('$emri','$password_','$email')";
 
-        $run = mysqli_query($conn,$query) or die(mysqli_error());
+        $run = mysqli_query($conn,$query) or die(mysqli_error($conn));
 
         if($run){
             echo"Succes";
@@ -28,5 +28,5 @@ if(isset($_POST['submit'])){
         echo"Krejt duhet mu plotsu";
     }
 }
-}
+
 ?>

@@ -53,11 +53,11 @@
                 <img src="Logo.png"  class="logo" />
                 <nav>
                     <ul>
-                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Home.php">Home</a></li>
                         <li><a href="Telefonia.html">Telefonia</a></li>
                         <li><a href="Interneti.html">Interneti</a></li>
-                        <li><a href="Help&Support.html">Help&Support</a></li>
-                        <li><a href="Profili_im.html">Profili Im</a></li>
+                        <li><a href="Help&Support.php">Help&Support</a></li>
+                        <li><a href="Profili_im.php">Profili Im</a></li>
                         <li> <form action="">
                             <input type="text" id="fname" name="fname" onkeyup="showHint(this.value)">
                             <button type="submit"><i class="fa fa-search"></i></button>
