@@ -86,68 +86,83 @@ input.invalid + p {
     <div class="wrapper">
         <h1> Inkuadrohu ne Grupin Frrok</h1>
         
-        <form action="mailto:FrrokMotion@gmail.com" method="POST" enctype="text/plain"   >
-            <table cellpadding="30px" style="text-align: center;">
-                <tr>
-                    <td>
-                    <input type="text" name="emri" placeholder="Emri" id="emri" />
-                    <p id="p01">Duhet te permbaje vetem shkronja</p>
-                    </td>
-                    <td>
-                        <label> Data e Lindjes </label></br>
-                        <input type="date" name="data" value="data">
-                            </td>
-                    
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text"  name="mbiemri"placeholder="Mbiemri" id="mbiemri"/>
-                        <p id="p01">Duhet te permbaje vetem shkronja</p>
-                        <button type="button" class="save">Ruaj</button>
-        <button type="button" class="access">Trego</button>
-                    </td>
-                    <td>
-                        <label> Qyteti </label>
-                            <input list="city" />
-                                 <datalist id="city">
-                                    
-                                 
-                            <option> Prishtine </option>
-                            <option> Mitrovice </option>
-                            <option> Pejë </option>
-                            <option> Gjakovë </option>
-                            <option> Prizren </option>
-                            <option> Gjilan </option>
-                        </datalist>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td>
-                        <label>Gijnia : </label> </br>
-            M<input style="margin-left: 35px;" type="radio" name="gjinia" value="1"  /></br>
-            F<input style="margin-left: 40px;"  type="radio" name="gjinia" value="2" /></br>
-            Other<input type="radio" name="gjinia" value="0"/></br>
-                    </td>
-                    <td>
-                        <label>Paguaj permes : </label></br>
-                        <input  type="radio" name="pagesa" value="1"  id="pagesa" /> MasterCard-Visa </br>
-                        <input style="margin-right: 57px;" type="radio" name="pagesa" value="2" id="pagesa"/>DebitCard </br>
-                        <input  style="margin-right: 82px;" type="radio" name="pagesa" value="0" id="pagesa"/>PayPal </br>
-                    </td>
-                    
-                    
-                </tr>
-                <td colspan="2">
-                        <input type="submit" id="submit" onclick="myFunction();komfirmimi()" value="Inkuadrohu">
-                </td>
-            <tr>
-                
-            </tr>
-
-
-                </table>
-        </form>
+<form action="connect.php" method="post">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div>
+                  <label for="male" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="m"
+                      id="male"
+                    />Male</label
+                  >
+                  <label for="female" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="f"
+                      id="female"
+                    />Female</label
+                  >
+                  <label for="others" class="radio-inline"
+                    ><input
+                      type="radio"
+                      name="gender"
+                      value="o"
+                      id="others"
+                    />Others</label
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                />
+              </div>
+              <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="number"
+                  name="number"
+                />
+              </div>
+              <input type="submit" class="btn btn-primary" />
+            </form>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 

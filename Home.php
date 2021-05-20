@@ -7,7 +7,41 @@
     <link rel="stylesheet" href="Home.Css"/> 
     <link rel="stylesheet" href="Header_Footer.css"/> 
     <script src="https://kit.fontawesome.com/3f982de400.js" crossorigin="anonymous"></script>
-
+    <script>
+        function showHint(str) {
+  if (str.length == 0) {
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  } else {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("txtHint").innerHTML = this.responseText;
+          if (this.responseText == "tip_aktiv") {
+              document.getElementById("linku").setAttribute("href", "telefonia.html");
+          }
+          else if(this.responseText == "tip_premium"){
+              document.getElementById("linku").setAttribute("href", "telefonia.html");
+          }
+          else if(this.responseText == "tip_basic"){
+              document.getElementById("linku").setAttribute("href", "telefonia.html");
+          }
+            else if(this.responseText == "interneti_superfibra"){
+              document.getElementById("linku").setAttribute("href", "interneti.html");
+          }
+          else if(this.responseText == "interneti_parapagim"){
+              document.getElementById("linku").setAttribute("href", "interneti.html");
+          }
+          else {
+              document.getElementById("linku").removeAttribute("href");
+          }
+      }
+    };
+    xmlhttp.open("GET", "ajax.php?q=" + str, true);
+    xmlhttp.send();
+  }
+}
+    </script>
 
 </head>
 <body>
@@ -23,12 +57,17 @@
                         <li><a href="Help&Support.html">Help&Support</a></li>
                         <li><a href="Profili_im.html">Profili Im</a></li>
                         <li> <form action="">
-                            <input type="text" placeholder="Search.." name="search">
+                            <input type="text" id="fname" name="fname" onkeyup="showHint(this.value)">
                             <button type="submit"><i class="fa fa-search"></i></button>
+                             
                           </form></li>
                     </ul>
+
                 </nav>
+                
             </div>
+             <p style="color:white;left:1030px;position:relative">Suggestions:<a id="linku"><span id="txtHint" style="color:white"></span></a></p>
+
            </div>
     </header>
     <div class="slideshow-conttainer">
@@ -95,7 +134,7 @@
 
      <!-- <nav></nav> -->
     <footer>
-        
+    </footer>
         <div class="footer">    
             <div class="inner_footer">
                     <div class="footer_items">
@@ -119,8 +158,8 @@
                         <li><a href="geolocation.html" target="_blank">Lokacioni im</a></li>
                         <li><a href="FrorkFun.html" target="_blank"> Argetohu:</a> </li>
                         <dt> Mbulueshmeria
-                                <dd>Kosova</li>
-                                <dd>Rajoni</li>
+                                <dd>Kosova</dd>
+                                <dd>Rajoni</dd>
                         </dt>
                     </ul>
                 </div>
@@ -153,7 +192,7 @@
                 </div>
             </div>
         </div>        
-    </footer>
+
 </body>
 </html>
 <script> 

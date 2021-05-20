@@ -187,24 +187,25 @@ input.invalid + p {
                 <a href="https://www.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
                 <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
-            <form id="login" class="input-group">
+            <form id="login" class="input-group" action="login.php" method="post">
                 <input type="text" name="username"class="input-field" placeholder="Username" id="username" autofocus >
                 <p id="p01"> Duhet te jete mes 5-12 shkronjave </p>
-                <input type="password" name="password" class="input-field" placeholder="Enter Password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}" >
+                <input type="password" name="password" class="input-field" placeholder="Enter Password" id="password" /><!--pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}"--> 
                 <p id="p01"> Duhet te jete mes 8-18 karaktereve</p>
-                <input type="checkbox" class="check-box"><span>Remember Password</span>
-                <button type="submit" class="submit-btn" id="submit" onclick="myFunction()">Log In</button>
+
+<!--              <input type="checkbox" class="check-box"><span>Remember Password</span> -->
+                <button type="submit" class="submit-btn" id="submit">Log In</button>
             </form>
-            <form id="register" class="input-group">
+            <form id="register" class="input-group" action="script1.php" method="post">
                 <input type="text" name="username" class="input-field" id="username" placeholder="Username"  autofocus >
                 <p id="p01"> Duhet te jete mes 5-12 shkronjave </p>
-                <input type="email" name="email" class="input-field" id="email" placeholder="Email Id" 
-                pattern="([a-z\d\.-_]+)@([a-z\d-]+)\.([a-z]{2,10})(\.[a-z]{2,10})?$">
+                <input type="email" name="email" class="input-field" id="email" placeholder="Email Id" />
+               <!-- pattern="([a-z\d\.-_]+)@([a-z\d-]+)\.([a-z]{2,10})(\.[a-z]{2,10})?$">-->
                 <p id="p01"> filani@fisteku.com(.eu) </p>
                 <input type="password" name="password" class="input-field" id="password" placeholder="Enter Password">
                 <p id="p01"> Duhet te jete mes 8-18 karaktereve</p>
-                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
-                <keygen name="secure"> <button type="submit" id="submit" class="submit-btn">Register</button>
+              <!-- <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>-->
+                <keygen name="secure"> <button type="submit" id="submit" class="submit-btn">Register</button> 
             </form>
         </div>
     </div>
@@ -227,8 +228,8 @@ input.invalid + p {
                     <li>Njoftime</li>
                     <li>Publikime</li>
                     <dt> Mbulueshmeria
-                            <dd>Kosova</li>
-                            <dd>Rajoni</li>
+                            <dd>Kosova</dd>
+                            <dd>Rajoni</dd>
                     </dt>
                 </ul>
                 
