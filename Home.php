@@ -45,6 +45,8 @@
 
 </head>
 <body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=257205876161869&autoLogAppEvents=1" nonce="GG2DvCHF"></script>
     <header style="position: absolute;">
         <div class="divi">
             <div class="container">
@@ -184,6 +186,9 @@
                         <li><a href="https://twitter.com/"target="_blank"><abbr title="Twitter">Tw</abbr><i class="fa fa-twitter"></i></a></li>
                         <li><a href="https://www.google.com/"target="_blank">Google <i class="fa fa-google-plus"></i></a></li>
                         <li><a href="https://www.instagram.com/"target="_blank">Instagram <i class="fab fa-instagram"></i></a></li>
+                        <li><div class="fb-share-button" data-href="https://bleronmexhuani1.github.io/INT20_21_Gr6/" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbleronmexhuani1.github.io%2FINT20_21_Gr6%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div></li>
+                        <li><a href="https://twitter.com/Altin97403910?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Altin97403910</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+
                     </ul>
                 </div>
                 <button onclick="displayDate()" style="border: 0;background-color: transparent;">Show Date : </button>
