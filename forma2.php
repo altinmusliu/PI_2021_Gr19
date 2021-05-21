@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--/*<!DOCTYPE html>
  <style>
     body{
         margin:0;
@@ -287,3 +287,4 @@ input.addEventListener('keyup',(e) =>{
     </script>
         </body>
 </html>
+-->
