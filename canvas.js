@@ -2,7 +2,7 @@
 var canvas = document.querySelector('canvas')
 ;
 canvas.width = 1515;
-canvas.height = 100; 
+canvas.height = 500; 
 var c = canvas.getContext('2d');
 /*
 c.fillStyle="pink";

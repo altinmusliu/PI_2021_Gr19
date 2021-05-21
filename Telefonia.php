@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 
 <style>
     .body {
@@ -159,11 +159,10 @@
     
 </style>
 
-
+<html>
 <head>
     <meta charset="utf-8" />
     <title>FrrokMotion/Telefonia</title>
-    <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <link rel="stylesheet" href="Header_Footer.css" >
 <link rel="stylesheet" href="Telefonia.css" >
 <script src="https://kit.fontawesome.com/3f982de400.js" crossorigin="anonymous"></script>
@@ -171,26 +170,7 @@
 </head>
 <body>
     
-    <header>
-        <div class="divi" style="position: absolute ;">
-            <div class="container">
-                <img src="Logo.png"  class="logo" />
-                <nav>
-                    <ul>
-                        <li><a href="Home.php">Home</a></li>
-                        <li><a href="Telefonia.php">Telefonia</a></li>
-                        <li><a href="Interneti.php">Interneti</a></li>
-                        <li><a href="Help&Support.php">Help&Support</a></li>
-                        <li><a href="Profili_im.php">Profili Im</a></li>
-                        <li> <form action="">
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                          </form></li>
-                    </ul>
-                </nav>
-            </div>
-           </div>
-    </header>    
+<?php include 'header.php' ?>   
     <div style=" width:100%;margin-top: 200px;">
 
         <section id="hero">
@@ -353,64 +333,8 @@
 
     </div>
     </div>
+    <?php include 'footer.php'?>
 
-    <footer>
-        <div class="footer">    
-            <div class="inner_footer">
-                    <div class="footer_items">
-                        <h2>Quick Links</h2>
-                        <div class="border"></div>
-                        <ul>
-                            <a href ="#"><li>Home</li></a>
-                             <a href="Telefonia.php"><li>About us</li></a>
-                             <a href="Interneti.php"><li>Gallery</li></a>
-                            <a href="Help&Support.php"><li>Contact</li></a>
-                           
-                        </ul>
-                    </div>
-                <div class="footer_items">
-                    <h2>Njoftime</h2>
-                    <div class="border"></div>
-                    <ul>
-                        
-                        <li>Njoftime</li>
-                        <li>Publikime</li>
-                        <dt> Mbulueshmeria
-                                <dd>Kosova</li>
-                                <dd>Rajoni</li>
-                        </dt>
-                    </ul>
-                </div>
-                <div class="footer_items">
-                    <h2>FrrokContact</h2>
-                    <div class="border"></div>
-                    <ul>
-                        <li>Adress: <a href="https://www.google.com/maps/place/Mujo+Ulqinaku,+Prishtin%C3
-                            %AB/@42.6573916,21.1535709,17z/data=
-                            !3m1!4b1!4m5!3m4!1s0x13549ee562ac94e5:0xc
-                            c73734b25c546b7!8m2!3d42.6573916!4d21.1557596",base target="_blank">Rr. Mujo Ulqinaku,Pejton,</br>
-                             Prishtine,Kosove</li></a>
-                        <li><mark> 049100062</mark></li>
-                        <address><a href="mailto:FrrokMotion@gmail.com"><li>FrrokMotion@hgmail.com</li></a></address>
-                    </ul>
-                </div>
-                <div class="footer_items">
-                    <h2>Social</h2>
-                    <div class="border"></div>
-                    <ul>
-                        <li><a href="https://www.facebook.com/" target="_blank"><abbr title="Facebook">Fb</abbr><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/"target="_blank"><abbr title="Twitter">Tw</abbr><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.google.com/"target="_blank">Google <i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="https://www.instagram.com/"target="_blank">Instagram <i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-                <button onclick="displayDate()" style="border: 0;background-color: transparent;">Show Date : </button>
-                <p id="showDate" style="font-style: italic;"></p>
-            </div>
-                </div>
-            </div>
-        </div>        
-    </footer>
 
 </body>
 </html>

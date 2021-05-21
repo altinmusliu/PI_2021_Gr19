@@ -151,27 +151,7 @@ input.invalid + p {
 </head>
 <body style="background-color:gray;margin: 0;">
 
-<header>
-   <div class="divi" style="position: absolute; background:linear-gradient(to right,gray,white);">
-    <div class="container" >
-        <img src="Logo.png"  class="logo" alt="logoja" href="https://meet.google.com/ndm-mpff-zkw"/>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Telefonia.html">Telefonia</a></li>
-                <li><a href="Interneti.html">Interneti</a></li>
-                <li><a href="Help&Support.html">Help&Support</a></li>
-                <li><a href="Profili_im.html">Profili Im</a></li>
-                <li> <form action="">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                  </form></li>
-                
-            </ul>
-        </nav>
-    </div>
-   </div>
-</header>
+<?php include'header.php'; ?>
     <div style="background-color:gray;">
         
         <div class="form-box">
@@ -209,59 +189,7 @@ input.invalid + p {
             </form>
         </div>
     </div>
-    <div class="footer">
-        <div class="inner_footer">
-            <div class="footer_items">
-                <h2>Sherbime dhe Produkte</h2>
-                <div class="border"></div>
-                <ul>
-                    <a href="Telefonia.html"><li>Telefonia</li></a>
-                    <a href="Interneti.html"><li>Interneti</li></a>
-                    
-                </ul>
-            </div>
-            <div class="footer_items">
-                <h2>Njoftime</h2>
-                <div class="border"></div>
-                <ul>
-                    
-                    <li>Njoftime</li>
-                    <li>Publikime</li>
-                    <dt> Mbulueshmeria
-                            <dd>Kosova</dd>
-                            <dd>Rajoni</dd>
-                    </dt>
-                </ul>
-                
-            </div>
-            <div class="footer_items">
-                <h2>FrrokContact</h2>
-                <div class="border"></div>
-                <ul>
-                    <li>Adress: <a href="https://www.google.com/maps/place/Mujo+Ulqinaku,+Prishtin%C3
-                        %AB/@42.6573916,21.1535709,17z/data=
-                        !3m1!4b1!4m5!3m4!1s0x13549ee562ac94e5:0xc
-                        c73734b25c546b7!8m2!3d42.6573916!4d21.1557596",base target="_blank">Rr. Mujo Ulqinaku,Pejton,</br>
-                         Prishtine,Kosove</li></a>
-                    <li>Phone: 049100062</li>
-                    <a href="mailto:FrrokMotion@gmail.com"><li>FrrokMotion@hgmail.com</li></a>
-                </ul>
-            </div>
-            <div class="footer_items">
-                <h2>Social</h2>
-                <div class="border"></div>
-                <ul>
-                    <li><a href="https://www.facebook.com/" target="_blank"><abbr title="Facebook">Fb</abbr><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/"target="_blank"><abbr title="Twitter">Tw</abbr><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.google.com/"target="_blank">Google <i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="https://www.instagram.com/"target="_blank">Instagram <i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <button onclick="displayDate()" style="border: 0;background-color: transparent;">Show Date : </button>
-            <p id="showDate" style="font-style: italic;"></p>
-        </div>
-        
-    </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <script>

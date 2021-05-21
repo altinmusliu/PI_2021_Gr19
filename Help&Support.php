@@ -2,7 +2,7 @@
 session_start();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -276,4 +276,6 @@ echo '<div id="hidden_content" style="display:none">' . $theData . '</div>';
         </div>
         </div>
         <!-- Fundi i permbatjes -->
-        <?php include 'footer.php';?>
+    <?php include 'footer.php'  ?>
+    </body>
+</html>

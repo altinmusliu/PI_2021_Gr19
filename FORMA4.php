@@ -69,13 +69,14 @@
                     echo"there are no messages";
                     }
                            
-                  ?>
+                 ?>
                 </div>
                 </div>
                 
             </form>
             
     </article>
+    <?php include 'footer.php'  ?>
 
     <script>
 

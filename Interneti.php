@@ -25,31 +25,11 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="divi" style="position: absolute ; padding:0;">
-            <div class="container">
-                <img src="Logo.png"  class="logo" />
-                <nav>
-                    <ul>
-                        <li><a  href="Home.php"><b>Home </b></a></li>
-                        <li><a href="Telefonia.php"><b> Telefonia</b></a></li>
-                        <li><a href="Interneti.php"><b> Interneti</b></a></li>
-                        <li><a href="Help&Support.php"><b>  Help&Support</b></a></li>
-                        <li><a href="Profili_im.php"><b>  Profili Im</b></a></li>
-                        <li> <form action="">
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                          </form></li>
-                    </ul>
-                </nav>
-            </div>
-           </div>
-    </header>   
-    
+<?php include'header.php'; ?>
 
 <div id="div1">
     
-    <canvas></canvas>
+    <!--<canvas height="200"></canvas>-->
     <script src="canvas.js"> </script>
     <div class="container">
         <div class="menu" style="margin-top: 0;">
@@ -179,60 +159,7 @@
         </ol>
         
     </div>
-    <div class="footer">
-        <div class="inner_footer">
-            <div class="footer_items">
-                <h2>Sherbime dhe Produkte</h2>
-                <div class="border"></div>
-                <ul>
-                    <a href="Telefonia.php"><li>Telefonia</li></a>
-                    <a href="Interneti.php"><li>Interneti</li></a>
-                    
-                </ul>
-            </div>
-            <div class="footer_items">
-                <h2>Njoftime</h2>
-                <div class="border"></div>
-                <ul>
-                    
-                    <li>Njoftime</li>
-                    <li>Publikime</li>
-                    <dt> Mbulueshmeria
-                            <dd>Kosova</li>
-                            <dd>Rajoni</li>
-                    </dt>
-                </ul>
-                
-            </div>
-            <div class="footer_items">
-                <h2>FrrokContact</h2>
-                <div class="border"></div>
-                <ul>
-                    <li>Adress: <a href="https://www.google.com/maps/place/Mujo+Ulqinaku,+Prishtin%C3
-                        %AB/@42.6573916,21.1535709,17z/data=
-                        !3m1!4b1!4m5!3m4!1s0x13549ee562ac94e5:0xc
-                        c73734b25c546b7!8m2!3d42.6573916!4d21.1557596",base target="_blank">Rr. Mujo Ulqinaku,Pejton,</br>
-                         Prishtine,Kosove</li></a>
-                    <li>Phone: 049100062</li>
-                    <a href="mailto:FrrokMotion@gmail.com"><li>FrrokMotion@hgmail.com</li></a>
-                </ul>
-            </div>
-            <div class="footer_items">
-                <h2>Social</h2>
-                <div class="border"></div>
-                <ul>
-                    <li><a href="https://www.facebook.com/" target="_blank"><abbr title="Facebook">Fb</abbr><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/"target="_blank"><abbr title="Twitter">Tw</abbr><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.google.com/"target="_blank">Google <i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="https://www.instagram.com/"target="_blank">Instagram <i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <button onclick="displayDate()" style="border: 0;background-color: transparent;">Show Date : </button>
-            <p id="showDate" style="font-style: italic;"></p>
-        </div>
-        
-    </div>
-</div>
+<?php include 'footer.php'  ?>
 
 <script>
 
