@@ -18,7 +18,7 @@
         $("#writeFile").click(function(){
         <?php
         $myfile = fopen("shkruaj.txt", "w");
-        $txt = "Altini Agoni Andi \n";
+        $txt = "Albina Altini Agoni Andi \n";
         fwrite($myfile, $txt);
         fclose($myfile);
         ?>
