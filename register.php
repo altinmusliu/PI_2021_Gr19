@@ -1,14 +1,25 @@
 <?php
-class Register {
-    private $username;
-    private $password;
-    private $email;
+class Register extends dbh{
 
-    function __construct($username,$password,$email){
-        $this->username = $username;
-        $this->password=$password;
-        $this->email=$email;
+    protected function getAllRegister(){
+        $sql = "SELECT username FROM register";
+        $result = $this->connect()->query($sql);
+        $numRows=$result->num_rows;
+        if($numRows>0){
+            while($row = $result->fetch_assoc()){
+                $data[]=$row;
+            }
+            return $data;
+        }
     }
+
+    function __construct($username,$password,$servername,$dbname){
+       $this->username = $username;
+       $this->password=$password;
+       $this->servername=$servername;
+       $this->dbname=$dbname;
+    }
+
     function get_username(){
         return $this->username;
     }
@@ -27,25 +38,11 @@ class Register {
     function set_email($email){
         $this->email=$email;
     }
-	public function __destruct()
-    {
-        echo "I'm dead now :(";
-    }
-    //public function students($email)
+    //public function __destruct()
     //{
-    //if(substr($email, -3)=="edu")
-    //{
-    //$array = array('Ju', 'jeni', 'student!');
-    //echo implode(" ", $array);
-    //echo " sepse email-i juaj eshte: " . $email;
+    //    echo "I'm dead now :(";
     //}
 
-    //else if(substr($email, -11)=="hotmail.com")
-    //{
-    //$replaced = str_replace("hotmail.com","outlook.com",$email);
-    //echo "Email që keni dhënë është: ". $replaced;
-    //}
-    //}
 }
 
 

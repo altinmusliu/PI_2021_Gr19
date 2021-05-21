@@ -32,7 +32,6 @@
 <div class="grid-container">
   <div class="item1" >
 <?php include'header.php'; ?>
-<audio  autoplay ><source src="sound.mp3"></audio>
 
 <button id=butoni style="position:absolute; margin-left: 30px; top:0; background-color:transparent; border:0;"> Fshih Menunë </button>
 </div>
