@@ -1,4 +1,6 @@
+
 <?php
+include("email.php");
 $servername = "localhost";
 $username = "root";
 $password ="";

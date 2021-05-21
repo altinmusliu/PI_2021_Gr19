@@ -120,7 +120,7 @@ if(isset($_COOKIE[$cookie_name])) {
 $_SESSION["konsumatori"] = "Konsumatori Albina";
 ?>
     <h1 style="margin-right: 100px;">Pershendetje, <?php echo $_SESSION["konsumatori"]?></h1>
-    <h2>FrrokMotion gjithmone i hapur per <a href="FORMA4.HTML" target="_blank">keshilla dhe verejtje!</a></h2>
+    <h2>FrrokMotion gjithmone i hapur per <a href="FORMA4.php" target="_blank">keshilla dhe verejtje!</a></h2>
     </div>
     <div style="padding: 5px;">
     <a  style="margin: 45%;" href="#" id="writeFile">Shkruaj rregullat</a>

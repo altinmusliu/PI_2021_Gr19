@@ -59,11 +59,11 @@ $(document).ready(function(){
              <img src="Logo.png"  class="logo" alt="logoja" href="https://meet.google.com/ndm-mpff-zkw"/>
              <nav>
                  <ul>
-                     <li><a href="Home.html">Home</a></li>
-                     <li><a href="Telefonia.html">Telefonia</a></li>
-                     <li><a href="Interneti.html">Interneti</a></li>
-                     <li><a href="Help&Support.html">Help&Support</a></li>
-                     <li><a href="Profili_im.html">Profili Im</a></li>
+                     <li><a href="Home.php">Home</a></li>
+                     <li><a href="Telefonia.php">Telefonia</a></li>
+                     <li><a href="Interneti.php">Interneti</a></li>
+                     <li><a href="Help&Support.php">Help&Support</a></li>
+                     <li><a href="Profili_im.php">Profili Im</a></li>
                      <li> <form action="">
                         <input type="text" placeholder="Search.." name="search">
                         <button type="submit"><i class="fa fa-search"></i></button>
@@ -89,16 +89,16 @@ $(document).ready(function(){
                 </thead>
                 <tr>
                 <td>
-                   <a id="alinqet" href="Interneti.html"> Paketa Internet me SuperFibra</a>
+                   <a id="alinqet" href="Interneti.php"> Paketa Internet me SuperFibra</a>
                 </td>
                 </tr>
                 <tr>
                 <td>
-                    <a id="alinqet" href="Paketa2.html">Paketa me parapagim </a>
+                    <a id="alinqet" href="Paketa2.php">Paketa me parapagim </a>
                 </td>
                 </tr>
                 <tr>
-                    <td><a id="alinqet" href="Paketa3.html"> Plane dhe Tarifa </a>
+                    <td><a id="alinqet" href="Paketa3.php"> Plane dhe Tarifa </a>
                     </td>
                 </tr>
             </table>
@@ -245,9 +245,8 @@ Your browser does not support the HTML5 canvas tag.
                 <h2>Sherbime dhe Produkte</h2>
                 <div class="border"></div>
                 <ul>
-                    <a href="Telefonia.html"><li>Telefonia</li></a>
-                    <a href="Interneti.html"><li>Interneti</li></a>
-                    
+                    <a href="Telefonia.php"><li>Telefonia</li></a>
+                    <a href="Interneti.php"><li>Interneti</li></a>   
                 </ul>
             </div>
             <div class="footer_items">

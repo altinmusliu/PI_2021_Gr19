@@ -18,19 +18,19 @@
       if (this.readyState == 4 && this.status == 200) {
           document.getElementById("txtHint").innerHTML = this.responseText;
           if (this.responseText == "tip_aktiv") {
-              document.getElementById("linku").setAttribute("href", "telefonia.html");
+              document.getElementById("linku").setAttribute("href", "telefonia.php");
           }
           else if(this.responseText == "tip_premium"){
-              document.getElementById("linku").setAttribute("href", "telefonia.html");
+              document.getElementById("linku").setAttribute("href", "telefonia.php");
           }
           else if(this.responseText == "tip_basic"){
-              document.getElementById("linku").setAttribute("href", "telefonia.html");
+              document.getElementById("linku").setAttribute("href", "telefonia.php");
           }
             else if(this.responseText == "interneti_superfibra"){
-              document.getElementById("linku").setAttribute("href", "interneti.html");
+              document.getElementById("linku").setAttribute("href", "interneti.php");
           }
           else if(this.responseText == "interneti_parapagim"){
-              document.getElementById("linku").setAttribute("href", "interneti.html");
+              document.getElementById("linku").setAttribute("href", "interneti.php");
           }
           else {
               document.getElementById("linku").removeAttribute("href");
@@ -54,8 +54,8 @@
                 <nav>
                     <ul>
                         <li><a href="Home.php">Home</a></li>
-                        <li><a href="Telefonia.html">Telefonia</a></li>
-                        <li><a href="Interneti.html">Interneti</a></li>
+                        <li><a href="Telefonia.php">Telefonia</a></li>
+                        <li><a href="Interneti.php">Interneti</a></li>
                         <li><a href="Help&Support.php">Help&Support</a></li>
                         <li><a href="Profili_im.php">Profili Im</a></li>
                         <li> <form action="">
@@ -144,9 +144,9 @@
                         <div class="border"></div>
                         <ul>
                             <a href ="#"><li>Home</li></a>
-                             <a href="Telefonia.html"><li>About us</li></a>
-                             <a href="Interneti.html"><li>Gallery</li></a>
-                            <a href="Help&Support.html"><li>Contact</li></a>
+                             <a href="Telefonia.php"><li>About us</li></a>
+                             <a href="Interneti.php"><li>Gallery</li></a>
+                            <a href="Help&Support.php"><li>Contact</li></a>
                            
                         </ul>
                     </div>
@@ -157,8 +157,8 @@
                         
                         <li>Njoftime</li>
                         <li>Publikime</li>
-                        <li><a href="geolocation.html" target="_blank">Lokacioni im</a></li>
-                        <li><a href="FrorkFun.html" target="_blank"> Argetohu:</a> </li>
+                        <li><a href="geolocation.php" target="_blank">Lokacioni im</a></li>
+                        <li><a href="FrorkFun.php" target="_blank"> Argetohu:</a> </li>
                         <dt> Mbulueshmeria
                                 <dd>Kosova</dd>
                                 <dd>Rajoni</dd>

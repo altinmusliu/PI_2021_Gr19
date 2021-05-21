@@ -27,7 +27,7 @@
 <body>
 
     <article style="display: inline-flex;" >
-        <form action="contact.php" method="post"   name="myform" >
+        <form action="contact.php" method="post" name="myform" >
             <div class="contact-form">
                 <h1>Contact</h1>
                 <div class="txtb">
@@ -51,7 +51,7 @@
                     <textarea  name="message" id="message" ></textarea>
 
                 </div>
-                <button type="submit" id="submit" class="btn btn-primary"  value="submit" name="submit"  >Submit</button>
+                <button type="submit" id="submit" class="btn btn-primary"  value="submit" name="submit" >Submit</button>
                 <button id="loadmessages" type="button">Show other people's messages</button>
                 <div id="comments">
                  <?php

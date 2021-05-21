@@ -178,8 +178,8 @@
                 <nav>
                     <ul>
                         <li><a href="Home.php">Home</a></li>
-                        <li><a href="Telefonia.html">Telefonia</a></li>
-                        <li><a href="Interneti.html">Interneti</a></li>
+                        <li><a href="Telefonia.php">Telefonia</a></li>
+                        <li><a href="Interneti.php">Interneti</a></li>
                         <li><a href="Help&Support.php">Help&Support</a></li>
                         <li><a href="Profili_im.php">Profili Im</a></li>
                         <li> <form action="">
@@ -199,7 +199,7 @@
                     <h1>Inkuadrohu <span></span></h1>
                     <h1>Në grupin<span></span></h1>
                     <h1>Frrokat<span></span></h1>
-                    <a href="forma2.html" target="_blank" type="button" class="cta">Pakoja 99$</a>
+                    <a href="forma2.php" target="_blank" type="button" class="cta">Pakoja 99$</a>
                 </div>
             </div>
         </section>
@@ -362,9 +362,9 @@
                         <div class="border"></div>
                         <ul>
                             <a href ="#"><li>Home</li></a>
-                             <a href="Telefonia.html"><li>About us</li></a>
-                             <a href="Interneti.html"><li>Gallery</li></a>
-                            <a href="Help&Support.html"><li>Contact</li></a>
+                             <a href="Telefonia.php"><li>About us</li></a>
+                             <a href="Interneti.php"><li>Gallery</li></a>
+                            <a href="Help&Support.php"><li>Contact</li></a>
                            
                         </ul>
                     </div>

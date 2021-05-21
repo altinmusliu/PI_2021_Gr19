@@ -1,15 +1,9 @@
 <?php
-
-
-
 function throwException($message="ADNI ESHTE ME I MIRI",$code=null){
     throw new Exception($message,$code);
 }
 try{
     $s="Registration";
-
-
-
 
     if (empty($_POST["username"]) or empty($_POST["email"]) or empty($_POST["password"])) {
         exit( "Registration failed due to box empty, fill all the boxes!");

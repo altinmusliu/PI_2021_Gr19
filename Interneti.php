@@ -32,8 +32,8 @@
                 <nav>
                     <ul>
                         <li><a  href="Home.php"><b>Home </b></a></li>
-                        <li><a href="Telefonia.html"><b> Telefonia</b></a></li>
-                        <li><a href="Interneti.html"><b> Interneti</b></a></li>
+                        <li><a href="Telefonia.php"><b> Telefonia</b></a></li>
+                        <li><a href="Interneti.php"><b> Interneti</b></a></li>
                         <li><a href="Help&Support.php"><b>  Help&Support</b></a></li>
                         <li><a href="Profili_im.php"><b>  Profili Im</b></a></li>
                         <li> <form action="">
@@ -59,16 +59,16 @@
                 </thead>
                 <tr>
                 <td>
-                   <a id="alinqet" href="Interneti.html"> Paketa Internet me SuperFibra</a>
+                   <a id="alinqet" href="Interneti.php"> Paketa Internet me SuperFibra</a>
                 </td>
                 </tr>
                 <tr>
                 <td>
-                    <a id="alinqet" href="Paketa2.html">Paketa me parapagim </a>
+                    <a id="alinqet" href="Paketa2.php">Paketa me parapagim </a>
                 </td>
                 </tr>
                 <tr>
-                    <td><a id="alinqet" href="Paketa3.html"> Plane dhe Tarifa </a>
+                    <td><a id="alinqet" href="Paketa3.php"> Plane dhe Tarifa </a>
                     </td>
                 </tr>
             </table>
@@ -185,8 +185,8 @@
                 <h2>Sherbime dhe Produkte</h2>
                 <div class="border"></div>
                 <ul>
-                    <a href="Telefonia.html"><li>Telefonia</li></a>
-                    <a href="Interneti.html"><li>Interneti</li></a>
+                    <a href="Telefonia.php"><li>Telefonia</li></a>
+                    <a href="Interneti.php"><li>Interneti</li></a>
                     
                 </ul>
             </div>

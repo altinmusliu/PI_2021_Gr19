@@ -14,11 +14,11 @@
         <img src="Logo.png"  class="logo" alt="logoja" href="https://meet.google.com/ndm-mpff-zkw"/>
         <nav>
             <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Telefonia.html">Telefonia</a></li>
-                <li><a href="Interneti.html">Interneti</a></li>
-                <li><a href="Help&support">Help&Support</a></li>
-                <li><a href="Profili_Im">Profili Im</a></li>
+                <li><a href="Home.php">Home</a></li>
+                <li><a href="Telefonia.php">Telefonia</a></li>
+                <li><a href="Interneti.php">Interneti</a></li>
+                <li><a href="Help&support.php">Help&Support</a></li>
+                <li><a href="Profili_Im.php">Profili Im</a></li>
                 
             </ul>
         </nav>

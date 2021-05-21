@@ -9,8 +9,8 @@
             <h2>Sherbime dhe Produkte</h2>
             <div class="border"></div>
             <ul>
-                <a href="Telefonia.html"><li>Telefonia</li></a>
-                <a href="Interneti.html"><li>Interneti</li></a>
+                <a href="Telefonia.php"><li>Telefonia</li></a>
+                <a href="Interneti.php"><li>Interneti</li></a>
                 
             </ul>
         </div>
