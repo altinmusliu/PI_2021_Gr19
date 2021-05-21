@@ -1,4 +1,8 @@
- <!DOCTYPE html>
+<?php
+ob_start();
+?>
+
+<!DOCTYPE html>
 
 <style>
     .body {

@@ -63,7 +63,25 @@ function displayDate() {
 </script>
 
     <header>
+    
         <div class="divi" style="position:absolute;padding:0;">
+        <div>
+        
+        <?php
+        //krijimi i cookie
+        $cookie_name = "user";
+        $cookie_value = "Konsumator";
+        setcookie($cookie_name, $cookie_value); 
+        if(isset($_COOKIE[$cookie_name])) {
+            echo "Cookie " . $cookie_name . " has value " . $_COOKIE[$cookie_name];
+        }
+        // Fshirja e cookie duke e bere oren 1h me heret
+        // setcookie("user", "", time() - 3600);
+        // echo "<br> Cookie 'user' is deleted.<br>";
+        //  echo "Cookie " . $cookie_name . " has value " . $_COOKIE[$cookie_name];
+        ?>
+        
+            </div>
             <div class="container">
                 <img src="Logo.png"  class="logo" />
                 <nav>

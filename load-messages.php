@@ -22,4 +22,3 @@ $msgnewcount = $_POST['msgnewcount'];
                         echo "there are no messages";
                     }
 
-?>

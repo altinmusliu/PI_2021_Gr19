@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+<?php include_once 'header.php';?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -84,28 +82,11 @@ function displayDate() {
     </script>
 </head>
 <body>
-<?php include 'header.php';?>
+
     
 <!-- Permbajtja -->
 <div class="contact-title">
-<?php
-//krijimi i cookie
-$cookie_name = "user";
-$cookie_value = "Albina";
-setcookie($cookie_name, $cookie_value); 
-if(isset($_COOKIE[$cookie_name])) {
-    echo "Cookie " . $cookie_name . " has value " . $_COOKIE[$cookie_name];
-}
-// Fshirja e cookie duke e bere oren 1h me heret
-// setcookie("user", "", time() - 3600);
-// echo "<br> Cookie 'user' is deleted.<br>";
- //echo "Cookie " . $cookie_name . " has value " . $_COOKIE[$cookie_name];
-?>
-
-<?php 
-$_SESSION["konsumatori"] = "Konsumatori Albina";
-?>
-    <h1 style="margin-right: 100px;">Pershendetje, <?php echo $_SESSION["konsumatori"]?></h1>
+    <h1 style="margin-right: 100px;">Pershendetje, konsumator</h1>
     <h2>FrrokMotion gjithmone i hapur per <a href="FORMA4.php" target="_blank">keshilla dhe verejtje!</a></h2>
     </div>
     <div style="padding: 5px;">
@@ -276,6 +257,6 @@ echo '<div id="hidden_content" style="display:none">' . $theData . '</div>';
         </div>
         </div>
         <!-- Fundi i permbatjes -->
-    <?php include 'footer.php'  ?>
+    <?php include_once 'footer.php'  ?>
     </body>
 </html>

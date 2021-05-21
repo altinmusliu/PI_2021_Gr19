@@ -11,7 +11,7 @@
 </head>
 <body>
     <?php include 'header.php'?>
-
+<?php //$_SESSION['username']; ?>
 <div id="fb-root"></div>
     <div class="slideshow-conttainer">
         <div class="slides">
