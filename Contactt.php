@@ -4,7 +4,7 @@ class Contact {
     private $email;
     private $phone;
     private $message;
-
+    // altini tu provu brenches
     function __construct($username,$email,$phone,$message){
         $this->username = $username;
         $this->email=$email;
